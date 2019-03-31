@@ -14,6 +14,7 @@ public class ArrayList_sort {
 			System.out.println(s);
 		}
 		
+		System.out.println( );
 	   Collections.sort(list);
 	   System.out.println("After sorting:");
 	   for(String s:list) {
