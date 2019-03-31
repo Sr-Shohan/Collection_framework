@@ -1,6 +1,7 @@
 package arrayList;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArraylistExample {
 
@@ -35,16 +36,23 @@ public class ArraylistExample {
 			 System.out.println(list.get(i));
 		 }
 		 
-		 //while loop
 
 		  /* While Loop for iterating ArrayList*/ 		
 	      System.out.println("While Loop"); 		
 	      int count = 0; 		
 	      while (list.size() > count) {
-	    	  count++;
+	    	  
 		 System.out.println(list.get(count));
 		 count++;
 	        
+	      }
+	      System.out.println();
+	      
+	      //Iterator........
+	      System.out.println("Iterator:");
+	      Iterator<String>ite=list.iterator();
+	      while(ite.hasNext()) {
+	    	  System.out.println(ite.next());
 	      }
 
 	}
